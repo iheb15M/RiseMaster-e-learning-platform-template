@@ -1,19 +1,32 @@
 import React from "react";
+
+import { useTranslation } from "react-i18next"; 
+import  Container  from "../../components/Container";
+
 import Logo from "../../assets/img/logo/Logo.png";
 import Search from "../../assets/img/icons/Search.svg";
 import Language from "../../assets/img/icons/language.svg";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <nav className="bg-white shadow-md w-full absolute top-0 h-16">
-      <div className="w-11/12 lg:w-10/12 grid grid-cols-12 items-center mx-auto h-full">
+      <Container
+      outerClassName="h-full"
+      innerClassName="grid grid-cols-12 items-center"
+      >
         <div className="col-span-2 lg:col-span-1 flex items-center">
-          <img className="h-8 w-auto" src={Logo} alt="Logo" />
+          <img className="h-full w-full object-contain" src={Logo} alt="Logo" />
         </div>
 
         <div className="col-span-2 flex items-center">
           <span className="text-secondary text-center w-full font-bold">
-            Become one of us
+          {t('navbar.become_one_of_us')} 
           </span>
         </div>
 
@@ -40,18 +53,22 @@ const Navbar = () => {
           <button className="text-white bg-primary hover:text-gray-light px-4 lg:px-6 py-3 rounded-md text-sm font-medium">
             Login
           </button>
-          <button className="bg-transparent border border-primary  text-primary px-4 lg:px-6 py-3 rounded-md text-sm font-medium">
+          <button className="bg-transparent border border-primary  text-primary px-4 lg:px-5 py-3 rounded-md text-sm font-medium">
             SignUp
           </button>
         </div>
 
         <div className="col-span-1 flex justify-end relative">
           <img src={Language} alt="language icon" />
-          <select className="bg-transparent active:border-none font-bold text-secondary border-none appearance-none">
+          <select
+          className="bg-transparent active:border-none font-bold text-secondary border-none appearance-none"
+          onChange={(e) => changeLanguage(e.target.value)} 
+          >
             <option value="en">EN</option>
+            <option value="fr">FR</option>
           </select>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 };
