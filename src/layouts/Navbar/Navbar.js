@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useTranslation } from "react-i18next"; 
 import  Container  from "../../components/Container";
 
@@ -25,7 +23,7 @@ const Navbar = () => {
         </div>
 
         <div className="col-span-2 flex items-center">
-          <span className="text-secondary text-center w-full font-bold">
+          <span className="text-secondary text-center w-full font-semibold">
           {t('navbar.become_one_of_us')} 
           </span>
         </div>

@@ -1,0 +1,64 @@
+{
+    "training": [
+        {
+            "id": 1,
+            "title": "Google data Analytics",
+            "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
+            "date": "12 June 2024, 20:00",
+            "trainer": {
+                "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
+                "name": "Google",
+                "rate": 4,
+                "totalReview": 150
+            },
+            "categorie": "Programming",
+            "sub_categorie": "Web Development"
+        },
+        {
+            "id": 2,
+            "title": "Google data Analytics",
+            "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
+            "date": "12 June 2024, 20:00",
+            "trainer": {
+                "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
+                "name": "Google",
+                "rate": 4,
+                "totalReview": 150
+            },
+            "categorie": "Programming",
+            "sub_categorie": "Web Development"
+        },
+        {
+            "id": 3,
+            "title": "Google data Analytics",
+            "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
+            "date": "12 June 2024, 20:00",
+            "trainer": {
+                "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
+                "name": "Google",
+                "rate": 4,
+                "totalReview": 150
+            },
+            "categorie": "Programming",
+            "sub_categorie": "Web Development"
+        },
+        {
+            "id": 4,
+            "title": "Google data Analytics",
+            "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
+            "date": "12 June 2024, 20:00",
+            "trainer": {
+                "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
+                "name": "Google",
+                "rate": 4,
+                "totalReview": 150
+            },
+            "categorie": "Programming",
+            "sub_categorie": "Web Development"
+        }
+    ]
+}

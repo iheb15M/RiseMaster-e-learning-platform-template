@@ -28,7 +28,7 @@ function Hero() {
         <div className="h-full flex justify-center items-center px-1">
           <img
             src={MainHero}
-            className="w-full lg:w-3/4 max-md:h-full"
+            className="w-full lg:w-3/4 max:h-11/12"
             alt="student holding books"
           />
         </div>

@@ -1,5 +1,6 @@
 import Navbar from '../../layouts/Navbar/Navbar';
 import Hero from './sections/Hero';
+import ExclusiveTraining from './sections/ExclusiveTraining';
 import './Home.scss';
 
 
@@ -8,6 +9,7 @@ function Home() {
         <div>
             <Navbar />
             <Hero />
+            <ExclusiveTraining />
         </div>
     )
 }

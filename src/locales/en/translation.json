@@ -1,15 +1,18 @@
 {
     "navbar": {
-      "become_one_of_us": "Become one of us",
-      "search_placeholder": "Search for training…",
-      "login": "Login",
-      "signup": "SignUp"
+        "become_one_of_us": "Become one of us",
+        "search_placeholder": "Search for training…",
+        "login": "Login",
+        "signup": "SignUp"
     },
     "hero": {
-    "heading1": "Investing in",
-    "heading2": "knowledge and",
-    "heading3": "Your future",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper.",
-    "button": "See more"
-  }
-  }
+        "heading1": "Investing in",
+        "heading2": "knowledge and",
+        "heading3": "Your future",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper.",
+        "button": "See more"
+    },
+    "exclusive_training": {
+        "title": "Our Exclusive Training"
+    }
+}
