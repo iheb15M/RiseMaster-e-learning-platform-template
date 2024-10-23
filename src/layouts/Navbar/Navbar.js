@@ -40,7 +40,7 @@ const Navbar = () => {
               <input
                 id="search"
                 className="block w-full pl-10 pr-3 py-2 rounded-md leading-6 bg-gray-light text-black placeholder-gray"
-                placeholder="Search for training…"
+                placeholder={t('navbar.search_placeholder')}
                 type="search"
               />
             </div>
@@ -49,10 +49,10 @@ const Navbar = () => {
 
         <div className="flex items-center justify-end gap-2 col-span-2">
           <button className="text-white bg-primary hover:text-gray-light px-4 lg:px-6 py-3 rounded-md text-sm font-medium">
-            Login
+          {t('navbar.login')} 
           </button>
           <button className="bg-transparent border border-primary  text-primary px-4 lg:px-5 py-3 rounded-md text-sm font-medium">
-            SignUp
+          {t('navbar.signup')} 
           </button>
         </div>
 

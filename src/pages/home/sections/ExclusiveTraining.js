@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
+
+import useFetchData from '../../../hooks/useFetchData';
 
 import Container from "../../../components/Container";
 import Card from "../../../components/Card";
@@ -9,27 +10,38 @@ import "../Home.scss";
 function ExclusiveTraining() {
   const { t } = useTranslation();
 
-  const [trainingList, setTrainingList] = useState([]);
+  const { data, loading, error } = useFetchData('training',
+  item => ({
+          ...item,
+          id: Number(item.id),
+          trainer: {
+            ...item.trainer,
+            rate: Number(item.trainer.rate),
+            totalReview: Number(item.trainer.totalReview)
+          }
+        })
+  );
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("http://localhost:5000/training");
-      const data = await response.json();
-      setTrainingList(data);
-    };
+  if (loading) return <p className="text-center text-primary">Loading...</p>;
 
-    fetchData();
-  }, []);
+  if (error) {
+    console.error("Error fetching training data:", error);
+    return <p className="text-center text-red-500">Something went wrong: {error}</p>;
+  }
 
   return (
     <Container innerClassName="flex flex-col justify-center items-center">
       <h1 className="text-primary text-5xl font-bold my-16">
         {t("exclusive_training.title")}
       </h1>
-      <div className="grid grid-cols-4 gap-7 w-full flex items-start justify-between">
-        {trainingList.map((training) => (
+      <div className="grid grid-cols-4 gap-7 w-full items-start justify-between">
+        {Array.isArray(data) && data.length > 0 ? (
+          data.map((training) => (
             <Card data={training} key={training.id} />
-        ))}
+          ))
+        ) : (
+          <p className="text-center text-gray-500">No training data available.</p>
+        )}
       </div>
     </Container>
   );

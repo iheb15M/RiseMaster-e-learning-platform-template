@@ -5,7 +5,7 @@
             "title": "Google data Analytics",
             "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
-            "date": "12 June 2024, 20:00",
+            "date": "12 November 2024, 20:00",
             "trainer": {
                 "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
                 "name": "Google",
@@ -17,45 +17,45 @@
         },
         {
             "id": 2,
-            "title": "Google data Analytics",
-            "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title": "Cryptocurrency Trading",
+            "img": "https://images.pexels.com/photos/6770770/pexels-photo-6770770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
-            "date": "12 June 2024, 20:00",
+            "date": "18 November 2024, 18:00",
             "trainer": {
-                "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
-                "name": "Google",
-                "rate": 4,
-                "totalReview": 150
+                "img": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "name": "Danny Magee",
+                "rate": 3,
+                "totalReview": 38
             },
-            "categorie": "Programming",
-            "sub_categorie": "Web Development"
+            "categorie": "Business and Finance",
+            "sub_categorie": "Data Analyst"
         },
         {
             "id": 3,
-            "title": "Google data Analytics",
-            "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title": "it support specialization",
+            "img": "https://images.pexels.com/photos/8204325/pexels-photo-8204325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
-            "date": "12 June 2024, 20:00",
+            "date": "19 November 2024, 19:30",
             "trainer": {
-                "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
-                "name": "Google",
+                "img": "https://www.svgrepo.com/show/303143/microsoft-logo.svg",
+                "name": "Microsoft",
                 "rate": 4,
-                "totalReview": 150
+                "totalReview": 84
             },
-            "categorie": "Programming",
-            "sub_categorie": "Web Development"
+            "categorie": "Communication",
+            "sub_categorie": "It Support"
         },
         {
             "id": 4,
-            "title": "Google data Analytics",
-            "img": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title": "Next.js Crash Course",
+            "img": "https://ih1.redbubble.net/image.4928907793.7534/st,small,507x507-pad,600x600,f8f8f8.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper..",
-            "date": "12 June 2024, 20:00",
+            "date": "12 November 2024, 20:00",
             "trainer": {
-                "img": "https://cdn2.hubspot.net/hubfs/53/image8-2.jpg",
-                "name": "Google",
+                "img": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                "name": "Lori Yates",
                 "rate": 4,
-                "totalReview": 150
+                "totalReview": 43
             },
             "categorie": "Programming",
             "sub_categorie": "Web Development"

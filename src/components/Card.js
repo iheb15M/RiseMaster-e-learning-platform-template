@@ -8,7 +8,9 @@ function Card({data}) {
     <div
       className="bg-white shadow-xl w-full rounded-3xl"
     >
-      <div className="h-60 bg-cover rounded-t-3xl backdrop-sepia-[.25]" style={{ backgroundImage: `url(${data.img})`}}></div>
+      <div className="h-60 bg-cover bg-center rounded-t-3xl backdrop-sepia-[.25]" style={{ backgroundImage: `url(${data.img})`}}>
+
+      </div>
       <div className="h-auto flex flex-col p-5">
         <div className="flex items-center">
           <Avatar img={data.trainer.img} />
