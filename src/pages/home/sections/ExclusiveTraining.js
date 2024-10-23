@@ -10,16 +10,16 @@ import "../Home.scss";
 function ExclusiveTraining() {
   const { t } = useTranslation();
 
-  const { data, loading, error } = useFetchData('training',
-  item => ({
-          ...item,
-          id: Number(item.id),
-          trainer: {
-            ...item.trainer,
-            rate: Number(item.trainer.rate),
-            totalReview: Number(item.trainer.totalReview)
-          }
-        })
+  const { data, loading, error } = useFetchData('training?_limit=4',
+    item => ({
+      ...item,
+      id: Number(item.id),
+      trainer: {
+        ...item.trainer,
+        rate: Number(item.trainer.rate),
+        totalReview: Number(item.trainer.totalReview)
+      }
+    })
   );
 
   if (loading) return <p className="text-center text-primary">Loading...</p>;
@@ -34,7 +34,7 @@ function ExclusiveTraining() {
       <h1 className="text-primary text-5xl font-bold my-16">
         {t("exclusive_training.title")}
       </h1>
-      <div className="grid grid-cols-4 gap-7 w-full items-start justify-between">
+      <div className="w-full grid grid-cols-4 gap-7 place-items-center place-content-between">
         {Array.isArray(data) && data.length > 0 ? (
           data.map((training) => (
             <Card data={training} key={training.id} />

@@ -6,7 +6,7 @@ import Avatar from "./Avatar";
 function Card({data}) {
   return (
     <div
-      className="bg-white shadow-xl w-full rounded-3xl"
+      className="bg-white shadow-xl min-h-full rounded-3xl"
     >
       <div className="h-60 bg-cover bg-center rounded-t-3xl backdrop-sepia-[.25]" style={{ backgroundImage: `url(${data.img})`}}>
 

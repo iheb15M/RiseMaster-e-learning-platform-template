@@ -60,5 +60,13 @@
             "categorie": "Programming",
             "sub_categorie": "Web Development"
         }
+    ],
+    "liveSession": [
+        {
+            "id": 6,
+            "title": "Next.js Crash Course",
+            "img": "https://ih1.redbubble.net/image.4928907793.7534/st,small,507x507-pad,600x600,f8f8f8.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper.."
+        }
     ]
 }

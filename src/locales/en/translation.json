@@ -14,5 +14,9 @@
     },
     "exclusive_training": {
         "title": "Our Exclusive Training"
+    },
+    "live-session": {
+        "live": "live",
+        "join-session": "Join Session Now"
     }
 }
