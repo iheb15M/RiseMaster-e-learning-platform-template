@@ -10,16 +10,19 @@ import "../Home.scss";
 function ExclusiveTraining() {
   const { t } = useTranslation();
 
-  const [data, loading, error] = useFetchData('training?_limit=4',
-    item => ({
-      ...item,
-      id: Number(item.id),
-      trainer: {
-        ...item.trainer,
-        rate: Number(item.trainer.rate),
-        totalReview: Number(item.trainer.totalReview)
-      }
-    })
+  const [trainingList, loading, error] = useFetchData('training?_limit=4',
+    item =>{
+      const training = {
+        ...item,
+        id: Number(item.id),
+        trainer: {
+          ...item.trainer,
+          rate: Number(item.trainer.rate),
+          totalReview: Number(item.trainer.totalReview)
+        }
+      };
+      return <Card data={training} key={training.id} />
+    }
   );
 
   if (loading) return <p className="text-center text-primary">Loading...</p>;
@@ -35,11 +38,7 @@ function ExclusiveTraining() {
         {t("exclusive_training.title")}
       </h1>
       <div className="w-full grid grid-cols-4 gap-7 place-items-center place-content-between">
-        {Array.isArray(data) && data.length > 0 ? (
-          data.map((training) => (
-            <Card data={training} key={training.id} />
-          ))
-        ) : (
+        {trainingList.length > 0 ? trainingList : (
           <p className="text-center text-gray-500">No training data available.</p>
         )}
       </div>

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Review from "./Review";
 import Avatar from "./Avatar";
 
+
 function Card({data}) {
   return (
     <div

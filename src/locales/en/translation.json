@@ -18,5 +18,8 @@
     "live-session": {
         "live": "live",
         "join-session": "Join Session Now"
+    },
+    "training-categorie": {
+        "title": "Our Training Categorie"
     }
 }

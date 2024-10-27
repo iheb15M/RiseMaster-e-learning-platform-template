@@ -66,6 +66,43 @@
             "title": "Career Essentials in Generative AI",
             "img": "https://images.pexels.com/photos/3756693/pexels-photo-3756693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper.."
+        },
+    "categorie": [
+        {
+            "id": 1,
+            "label": "Technology and Programming",
+            "img": "https://img.freepik.com/free-photo/cyber-security-expert-working-with-technology-neon-lights_23-2151645682.jpg?t=st=1730033118~exp=1730036718~hmac=74905b88512d6805512f73c4d4deee9eed77121a4f3c80c21f9866c436e89f47&w=740"
+        },
+        {
+            "id": 2,
+            "label": "Business and Finance",
+            "img": "https://img.freepik.com/free-photo/businessman-pointing-chart-digital-monitor-generated-by-ai_188544-22442.jpg?t=st=1730031888~exp=1730035488~hmac=4b7810470bb81735aaaa5a2efc51afd81dee3577e95d5f506114a65f72acb8a1&w=826"
+        },
+        {
+            "id": 3,
+            "label": "Creative Arts",
+            "img": "https://img.freepik.com/free-photo/glowing-laptop-wooden-desk-modern-office-abstract-technology-generated-by-artificial-intelligence_24640-131187.jpg?t=st=1730033021~exp=1730036621~hmac=cf4a158b4bf242826fff24e0edf38185276275140bbb5bd236af7714850fd340&w=1380"
+        },
+        {
+            "id": 4,
+            "label": "Language and Communication",
+            "img": "https://img.freepik.com/free-photo/international-day-education-cartoon-style_23-2151007486.jpg?t=st=1730033288~exp=1730036888~hmac=2d2e6323d81723d1fa96babc4f51902d50879bf8e1516751c56042ebe5bd01e9&w=996"
+        },
+        {
+            "id": 5,
+            "label": "Personal Development",
+            "img": "https://img.freepik.com/free-photo/businessman-rocket-concept_23-2150529555.jpg?t=st=1730033056~exp=1730036656~hmac=0f21965e1c1fc2f198b4c0000499bed29a35ba6cc4340eb850d1e680cff01fd0&w=1380"
+        },
+        {
+            "id": 6,
+            "label": "Professional Skills",
+            "img": "https://img.freepik.com/free-photo/businessman-sitting-table-conference-room-business-success-concept_1142-51789.jpg?t=st=1730033407~exp=1730037007~hmac=bb9ed1aec133bcda01a09d62a824da4e0289a6bc8f889e5a7d5ef247fcacdb35&w=740"
+        },
+        {
+            "id": 7,
+            "label": "Science and Mathematics",
+            "img": "https://img.freepik.com/free-photo/view-3d-male-chemist-lab_23-2150710072.jpg?t=st=1730033327~exp=1730036927~hmac=94dba0805a27d9e0d9630fa9278b8301a388e8f28d77c36d4cc9bb2dce4a8216&w=826"
         }
+    ]
     
 }
