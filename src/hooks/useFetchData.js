@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useFetchData = (path, mapFn = null) => {
+const useFetchData = (path, mapFn = undefined) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -26,6 +26,7 @@ const useFetchData = (path, mapFn = null) => {
         }
 
         const result = await response.json();
+
         if (mapFn) {
             const parsedData = result.map(mapFn);
             setData(parsedData);   
@@ -42,7 +43,7 @@ const useFetchData = (path, mapFn = null) => {
     fetchData();
   }, [path]);
 
-  return { data, loading, error };
+  return [data, loading, error];
 };
 
 export default useFetchData;

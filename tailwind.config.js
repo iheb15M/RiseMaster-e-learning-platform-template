@@ -19,7 +19,8 @@ module.exports = {
         'light': '#F7F7F7',
         default: '#616161',
       },
-      'green': '#1BC573'
+      'green': '#1BC573',
+      'red': '#CD0000'
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],

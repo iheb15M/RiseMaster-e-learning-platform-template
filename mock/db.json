@@ -61,12 +61,11 @@
             "sub_categorie": "Web Development"
         }
     ],
-    "liveSession": [
-        {
+    "liveSession": {
             "id": 6,
-            "title": "Next.js Crash Course",
-            "img": "https://ih1.redbubble.net/image.4928907793.7534/st,small,507x507-pad,600x600,f8f8f8.jpg",
+            "title": "Career Essentials in Generative AI",
+            "img": "https://images.pexels.com/photos/3756693/pexels-photo-3756693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices ex ut sem tincidunt, ac dignissim elit bibendum. Etiam vestibulum at metus eget ullamcorper.."
         }
-    ]
+    
 }

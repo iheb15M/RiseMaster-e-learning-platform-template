@@ -59,11 +59,11 @@ const Navbar = () => {
         <div className="col-span-1 flex justify-end relative">
           <img src={Language} alt="language icon" />
           <select
-          className="bg-transparent active:border-none font-bold text-secondary border-none appearance-none"
+          className="bg-transparent font-bold text-secondary border-none appearance-none"
           onChange={(e) => changeLanguage(e.target.value)} 
           >
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
+            <option className="text-secondary font-bold" value="en">EN</option>
+            <option className="text-secondary font-bold" value="fr">FR</option>
           </select>
         </div>
       </Container>

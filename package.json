@@ -2,6 +2,13 @@
   "name": "rise-master",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Iheb Mejri",
+    "email": "m.ihebmejri@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/iheb15M/RiseMaster-e-learning-platform-template"
+  },
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",

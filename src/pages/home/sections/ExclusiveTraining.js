@@ -10,7 +10,7 @@ import "../Home.scss";
 function ExclusiveTraining() {
   const { t } = useTranslation();
 
-  const { data, loading, error } = useFetchData('training?_limit=4',
+  const [data, loading, error] = useFetchData('training?_limit=4',
     item => ({
       ...item,
       id: Number(item.id),
