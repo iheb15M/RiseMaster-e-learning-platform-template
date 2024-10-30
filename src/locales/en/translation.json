@@ -20,6 +20,16 @@
         "join-session": "Join Session Now"
     },
     "training-categorie": {
-        "title": "Our Training Categorie"
+        "title": "Our Training Categories",
+        "see-more": "See more",
+        "browse-all": "Browse All Categories"
+    },
+    "newsletter": {
+        "title": "Join our newsLetter",
+        "subscribe": "Subscribe"
+    },
+    "form-errors": {
+        "required": "required",
+        "invalid-email": "Invalid email address"
     }
 }

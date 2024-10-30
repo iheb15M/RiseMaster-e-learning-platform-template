@@ -31,7 +31,8 @@ function TrainingCategories() {
       <div className="grid grid-cols-4 w-full gap-x-3 gap-y-7">
         {categories}
         <CategorieCard
-          label="Browse All Categorie"
+          id={-1}
+          label={t("training-categorie.browse-all")}
           img="https://img.freepik.com/free-photo/3d-rendering-geometric-shapes_23-2150979656.jpg?t=st=1730033619~exp=1730037219~hmac=06a5db4842e9158023250d84359594b8135845093303a0ca208fdb221f21fa57&w=1380"
           seeMore={false}
         />

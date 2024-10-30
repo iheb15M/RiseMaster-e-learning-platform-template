@@ -18,6 +18,19 @@
   "live-session": {
       "live": "en direct",
       "join-session": "Rejoignez maintenant"
+  },
+  "training-categorie": {
+      "title": "Nos catégories de formation",
+      "see-more": "Voir plus",
+      "browse-all": "Toutes les catégories"
+  },
+  "newsletter": {
+      "title": "Inscrivez-vous à notre newsletter",
+      "subscribe": "S'abonner"
+  },
+  "form-errors": {
+      "required": "champ obligatoire",
+      "invalid-email": "Adresse email invalide"
   }
   }
   

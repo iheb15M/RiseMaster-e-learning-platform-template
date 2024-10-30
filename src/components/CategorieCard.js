@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next"; 
 import PropTypes from "prop-types";
 
 import "./style/CategorieCard.scss";
 
 function CategorieCard({ id, label, img, seeMore = true }) {
+  
+  const { t } = useTranslation();
+  
   return (
     <div
-      key={id || 0}
+      key={id}
       className="flex flex-col p-8 justify-center shadow-xl min-h-full rounded-3xl categorie"
       style={{ backgroundImage: `url(${img})` }}
     >
@@ -13,7 +17,7 @@ function CategorieCard({ id, label, img, seeMore = true }) {
         <>
           <h5 className="text-white font-semibold">{label}</h5>
           <span className="text-white flex items-center">
-            <small>See more</small>
+            <small>{ t('training-categorie.see-more') }</small>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
                 d="M9 18L15 12L9 6"
@@ -46,10 +50,10 @@ function CategorieCard({ id, label, img, seeMore = true }) {
 }
 
 CategorieCard.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  seeMore: PropTypes.bool.isRequired,
+  seeMore: PropTypes.bool,
 };
 
 export default CategorieCard;
