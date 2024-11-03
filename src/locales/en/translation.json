@@ -28,6 +28,9 @@
         "title": "Join our newsLetter",
         "subscribe": "Subscribe"
     },
+    "feedback": {
+        "title": "what our clients says"
+    },
     "form-errors": {
         "required": "required",
         "invalid-email": "Invalid email address"
