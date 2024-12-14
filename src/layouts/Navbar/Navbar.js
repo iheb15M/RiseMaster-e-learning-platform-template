@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md w-full absolute top-0 h-16">
+    <nav className="bg-white shadow-md w-full sticky top-0 h-16 ">
       <Container
       outerClassName="h-full"
       innerClassName="grid grid-cols-12 items-center"
