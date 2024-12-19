@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RiseMaster-e-learning-platform-template/static/css/main.5c651c66.css",
-    "main.js": "/RiseMaster-e-learning-platform-template/static/js/main.0dc660ed.js",
+    "main.js": "/RiseMaster-e-learning-platform-template/static/js/main.d918aa2a.js",
     "static/js/453.7213eac0.chunk.js": "/RiseMaster-e-learning-platform-template/static/js/453.7213eac0.chunk.js",
     "static/media/main-hero.png": "/RiseMaster-e-learning-platform-template/static/media/main-hero.071fb4d6f85efeb4ddd9.png",
     "static/media/language.svg": "/RiseMaster-e-learning-platform-template/static/media/language.1e498e7f627bc2dadbfc2c68ae4b676f.svg",
@@ -10,11 +10,11 @@
     "static/media/Search.svg": "/RiseMaster-e-learning-platform-template/static/media/Search.d7b484aea99458fb377306e9905ccf20.svg",
     "static/media/play-Icon.svg": "/RiseMaster-e-learning-platform-template/static/media/play-Icon.1851b35fb35141303acf8734321d71a8.svg",
     "main.5c651c66.css.map": "/RiseMaster-e-learning-platform-template/static/css/main.5c651c66.css.map",
-    "main.0dc660ed.js.map": "/RiseMaster-e-learning-platform-template/static/js/main.0dc660ed.js.map",
+    "main.d918aa2a.js.map": "/RiseMaster-e-learning-platform-template/static/js/main.d918aa2a.js.map",
     "453.7213eac0.chunk.js.map": "/RiseMaster-e-learning-platform-template/static/js/453.7213eac0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c651c66.css",
-    "static/js/main.0dc660ed.js"
+    "static/js/main.d918aa2a.js"
   ]
 }
