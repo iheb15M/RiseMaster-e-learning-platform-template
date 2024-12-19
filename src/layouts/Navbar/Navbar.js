@@ -1,9 +1,10 @@
-import { useTranslation } from "react-i18next"; 
-import  Container  from "../../components/Container";
+import { useTranslation } from "react-i18next";
 
 import Logo from "../../assets/img/logo/Logo.png";
+import MiniLogo from "../../assets/img/logo/mini-logo.png";
 import Search from "../../assets/img/icons/Search.svg";
 import Language from "../../assets/img/icons/language.svg";
+import PhoneMenu from "../../assets/img/icons/phone-menu.svg";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -13,22 +14,28 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md w-full sticky top-0 h-16 ">
-      <Container
-      outerClassName="h-full"
-      innerClassName="grid grid-cols-12 items-center"
-      >
-        <div className="col-span-2 lg:col-span-1 flex items-center">
-          <img className="h-full w-full object-contain" src={Logo} alt="Logo" />
+    <nav className="bg-white shadow-md sticky z-20 top-0 h-16 ">
+      <div className="w-11/12 h-full mx-auto flex items-center justify-between">
+        <div className="w-1/12 md:w-2/12 flex items-center">
+          <img
+            className="h-full w-auto object-contain hidden xl:block"
+            src={Logo}
+            alt="Logo"
+          />
+          <img
+            className="h-full object-contain block xl:hidden"
+            src={MiniLogo}
+            alt="Logo"
+          />
         </div>
 
-        <div className="col-span-2 flex items-center">
+        <div className="w-2/12 items-center hidden xl:flex">
           <span className="text-secondary text-center w-full font-semibold">
-          {t('navbar.become_one_of_us')} 
+            {t("navbar.become_one_of_us")}
           </span>
         </div>
 
-        <div className="col-span-5 lg:col-span-6 flex items-center justify-center">
+        <div className="w-9/12 xl:w-6/12 flex items-center justify-center">
           <div className="w-full h-full">
             <label htmlFor="search" className="sr-only">
               Search
@@ -40,33 +47,40 @@ const Navbar = () => {
               <input
                 id="search"
                 className="block w-full pl-10 pr-3 py-2 rounded-md leading-6 bg-gray-light text-black placeholder-gray"
-                placeholder={t('navbar.search_placeholder')}
+                placeholder={t("navbar.search_placeholder")}
                 type="search"
               />
             </div>
           </div>
         </div>
 
-        <div className="flex items-center justify-end gap-2 col-span-2">
-          <button className="text-white bg-primary hover:text-gray-light px-4 lg:px-6 py-3 rounded-md text-sm font-medium">
-          {t('navbar.login')} 
+        <div className="hidden xl:flex items-center justify-end lg:space-x-1 xl:space-x-2 w-2/12">
+          <button className="text-white bg-primary hover:text-gray-light max-w-1/2 px-4 xl:px-6 py-3 rounded-md text-sm font-medium">
+            {t("navbar.login")}
           </button>
-          <button className="bg-transparent border border-primary  text-primary px-4 lg:px-5 py-3 rounded-md text-sm font-medium">
-          {t('navbar.signup')} 
+          <button className="bg-transparent border border-primary  text-primary max-w-1/2 px-4 xl:px-5 py-3 rounded-md text-sm font-medium">
+            {t("navbar.signup")}
           </button>
         </div>
 
-        <div className="col-span-1 flex justify-end relative">
+        <div className="w-1/12 hidden xl:flex justify-end relative">
           <img src={Language} alt="language icon" />
           <select
-          className="bg-transparent font-bold text-secondary border-none appearance-none"
-          onChange={(e) => changeLanguage(e.target.value)} 
+            className="bg-transparent font-bold text-secondary border-none appearance-none"
+            onChange={(e) => changeLanguage(e.target.value)}
           >
-            <option className="text-secondary font-bold" value="en">EN</option>
-            <option className="text-secondary font-bold" value="fr">FR</option>
+            <option className="text-secondary font-bold" value="en">
+              EN
+            </option>
+            <option className="text-secondary font-bold" value="fr">
+              FR
+            </option>
           </select>
         </div>
-      </Container>
+        <div className="w-1/12 flex xl:hidden justify-end relative">
+          <img src={PhoneMenu} alt="Menu" className="max-h-full" />
+        </div>
+      </div>
     </nav>
   );
 };

@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 
 import "./style/CategorieCard.scss";
 
-function CategorieCard({ id, label, img, seeMore = true }) {
+function CategorieCard({ id, label, img, seeMore = true, className }) {
   
   const { t } = useTranslation();
   
   return (
     <div
       key={id}
-      className="flex flex-col p-8 justify-center shadow-xl min-h-full rounded-3xl categorie"
+      className={`flex flex-col p-8 justify-center shadow-xl min-h-full rounded-3xl categorie ${className}`}
       style={{ backgroundImage: `url(${img})` }}
     >
       {seeMore ? (
@@ -30,7 +30,7 @@ function CategorieCard({ id, label, img, seeMore = true }) {
           </span>
         </>
       ) : (
-        <span className="text-white flex justify-center items-center w-full">
+        <div className="text-white flex justify-center items-center">
           <h5 className="font-semibold text-xl">
             {label}
           </h5>
@@ -43,7 +43,7 @@ function CategorieCard({ id, label, img, seeMore = true }) {
                 strokeLinejoin="round"
               />
             </svg>
-        </span>
+        </div>
       )}
     </div>
   );

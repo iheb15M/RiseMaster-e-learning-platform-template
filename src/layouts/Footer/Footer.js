@@ -1,18 +1,24 @@
-import Container from "../../components/Container";
 import Logo from "../../assets/img/logo/Logo-white.png";
 import facebook from "../../assets/img/icons/facebook.png";
 import Linkedin from "../../assets/img/icons/linkedin.png";
 import website from "../../assets/img/icons/link.png";
 import "./Footer.scss";
+import Input from "../../components/Input";
 
 function Footer() {
+  const inputParam = {
+    type: 'email',
+    name: 'email',
+    placeholder: 'email@exp.com',
+    required: true,
+  };
+
   return (
-    <footer className="pt-16">
-      <Container
-        outerClassName="w-full bg-primary-gradient text-white py-9"
-        innerClassName="flex flex-col space-y-6"
+    <footer className="pt-16 w-full bg-primary-gradient">
+      <div
+        className="text-white py-9 flex flex-col space-y-6 w-11/12 mx-auto"
       >
-        <div className="flex justify-between items-center">
+        <div className="hidden md:flex justify-between items-center">
           <div className="flex w-1/2">
             <div className="flex flex-col w-1/3 space-y-4">
               <p className="font-bold">Menu</p>
@@ -40,14 +46,11 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col bg-primary space-y-3.5 py-7 px-10 w-1/4">
+          <div className="flex flex-col bg-primary space-y-3.5 py-7 px-5 lg:px-10 w-1/3 lg:w-1/4">
             <p>Subscribe</p>
             <div className="flex">
-              <input
-                className="rounded-l-lg max-w-full p-3"
-                type="email"
-                placeholder="Email adress"
-              />
+
+              <Input param={inputParam} className="bg-white rounded-l-lg max-w-full" />
               <button className="rounded-r-lg max-w-full p-3"> X </button>
             </div>
             <p className="text-sm font-thin">
@@ -66,7 +69,7 @@ function Footer() {
             <img src={website} alt="Link website" />
           </div>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 }

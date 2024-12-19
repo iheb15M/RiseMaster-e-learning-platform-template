@@ -1,11 +1,10 @@
 import { useTranslation } from "react-i18next";
-
+import Slider from "react-slick";
 import useFetchData from '../../../hooks/useFetchData';
-
-import Container from "../../../components/Container";
 import Card from "../../../components/Card";
 
 import "../Home.scss";
+
 
 function ExclusiveTraining() {
   const { t } = useTranslation();
@@ -25,6 +24,14 @@ function ExclusiveTraining() {
     }
   );
 
+  const carouselSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   if (loading) return <p className="text-center text-primary">Loading...</p>;
 
   if (error) {
@@ -33,16 +40,23 @@ function ExclusiveTraining() {
   }
 
   return (
-    <Container innerClassName="flex flex-col justify-center items-center">
-      <h1 className="text-primary text-5xl font-bold my-16">
+    <section className="flex flex-col justify-center items-center w-11/12 mx-auto">
+      <h1 className="text-primary text-5xl text-center font-bold my-12 lg:my-16">
         {t("exclusive_training.title")}
       </h1>
-      <div className="w-full grid grid-cols-4 gap-7 place-items-center place-content-between">
+      <div className="w-full hidden xl:grid grid-cols-4 gap-7 place-items-center place-content-between">
         {trainingList.length > 0 ? trainingList : (
           <p className="text-center text-gray-500">No training data available.</p>
         )}
       </div>
-    </Container>
+      <div className="w-full flex justify-center items-center xl:hidden">
+      <Slider {...carouselSettings} className="w-full sm:w-2/3 lg:1/2">
+      {trainingList.length > 0 ? trainingList : (
+          <p className="text-center text-gray-500">No training data available.</p>
+        )}
+      </Slider>
+      </div>
+    </section>
   );
 }
 

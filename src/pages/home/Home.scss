@@ -1,12 +1,14 @@
 $live-color-faded: rgba(254, 59, 31, 0.5);
 $live-backdrop-faded: rgba(60, 47, 128, 0.15);
 
-.live-session {
-    .image {
-        min-height: 342px;
-        .play-btn{
-            cursor: pointer;
-        }
+header {
+  height: calc(100svh - 64px);
+}
+.slick-slide{
+  padding: 16px;
+  padding-bottom: 32px;
+}
+.live-session-image {
         &::before {
             content: "";
             position: absolute;
@@ -45,4 +47,3 @@ $live-backdrop-faded: rgba(60, 47, 128, 0.15);
           }
     }
 
-}

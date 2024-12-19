@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import Container from "./Container";
 import Input from "./Input";
 
 function NewsLetter() {
@@ -23,23 +22,25 @@ function NewsLetter() {
 
 
   return (
-    <Container
-      outerClassName="bg-accent-light"
-      innerClassName="py-8 grid grid-cols-12 justify-items-center content-center"
+    <section className="bg-accent-light" >
+      <div
+    className="py-8 flex flex-col lg:flex-row justify-center items-center w-11/12 mx-auto"
     >
-      <h3 className="col-span-4 text-secondary capitalize font-bold text-2xl flex items-center">
+      <h3 className="w-full lg:w-1/3 text-secondary capitalize font-bold text-2xl flex items-center justify-center pb-9 lg:p-0">
         {t("newsletter.title")}
       </h3>
-      <form onSubmit={handleSubmit} className="grid grid-cols-6 gap-4 col-span-6">
-       <Input param={inputParam} onValueChange={(value) => setEmail(value)}  className="col-span-5"/>
+      <form onSubmit={handleSubmit} className="flex flex-col lg:flex-row w-full lg:w-6/12 gap-4">
+       <Input param={inputParam} onValueChange={(value) => setEmail(value)}  className="w-full lg:w-5/6"/>
         <button
           type="submit"
-          className="col-span-1 text-white bg-primary hover:text-gray-light px-4 lg:px-6 rounded-md text-sm font-medium"
+          className="w-full text-white bg-primary hover:text-gray-light px-6 py-4 rounded-md text-sm font-medium"
         >
           {t("newsletter.subscribe")}
         </button>
       </form>
-    </Container>
+    </div>
+    </section>
+    
   );
 }
 
