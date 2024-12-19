@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 const useFetchData = (path, mapFn = undefined) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const stableMapFn = useCallback(mapFn, [mapFn]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,11 +29,11 @@ const useFetchData = (path, mapFn = undefined) => {
 
         const result = await response.json();
 
-        if (mapFn) {
-            const parsedData = result.map(mapFn);
-            setData(parsedData);   
-        }else {
-            setData(result);
+        if (stableMapFn) {
+          const parsedData = result.map(stableMapFn);
+          setData(parsedData);
+        } else {
+          setData(result);
         }
       } catch (error) {
         setError(error.message);
@@ -41,7 +43,7 @@ const useFetchData = (path, mapFn = undefined) => {
     };
 
     fetchData();
-  }, [path]);
+  }, [path, stableMapFn]); 
 
   return [data, loading, error];
 };

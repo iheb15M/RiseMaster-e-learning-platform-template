@@ -5,7 +5,7 @@ import "./styles/main.scss";
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/RiseMaster-e-learning-platform-template">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

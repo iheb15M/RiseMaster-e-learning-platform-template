@@ -2,6 +2,7 @@
   "name": "rise-master",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iheb15M.github.io/RiseMaster-e-learning-platform-template",
   "author": {
     "name": "Iheb Mejri",
     "email": "m.ihebmejri@gmail.com"
@@ -34,7 +35,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server --watch mock/db.json --port 5000",
-    "dev": "concurrently \"npm start\" \"npm run server\""
+    "dev": "concurrently \"npm start\" \"npm run server\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -55,7 +58,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^9.0.1",
+    "gh-pages": "^6.2.0",
     "json-server": "^1.0.0-beta.3",
     "sass": "^1.79.5",
     "sass-loader": "^16.0.2",
