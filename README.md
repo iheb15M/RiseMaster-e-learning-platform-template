@@ -27,11 +27,5 @@ To run this project locally, follow these steps:
 3. Run the project:
    ```bash
    npm run dev
-### Key points in this `README.md`:
-- **Overview**: A brief description of the project.
-- **Features**: Highlights the main aspects of the template.
-- **Installation**: Instructions to set up the project locally.
-- **Technologies Used**: React, SCSS and Tailwind CSS
-- **Contributing**: Encourages contributions from others.
-- **License**: Specifies the license for the project.
+
 
