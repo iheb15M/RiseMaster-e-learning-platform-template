@@ -1,8 +1,8 @@
 {
   "name": "rise-master",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://iheb15M.github.io/RiseMaster-e-learning-platform-template",
+  "private": false,
+  "homepage": "https://risemaster.ihebmejri.com/",
   "author": {
     "name": "Iheb Mejri",
     "email": "m.ihebmejri@gmail.com"
