@@ -15,7 +15,7 @@ function FeedbackCard({key, review, feedback, profile, className}) {
 }
 
 FeedbackCard.prototype = {
-    id: PropTypes.number.isRequired,
+    key: PropTypes.number.isRequired,
     review: PropTypes.number.isRequired,
     feedback: PropTypes.string.isRequired,
     className: PropTypes.string,

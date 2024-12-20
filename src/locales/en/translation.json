@@ -31,6 +31,20 @@
     "feedback": {
         "title": "what our clients says"
     },
+    "footer": {
+        "menu": "Menu",
+        "home": "Home",
+        "teach-with-us": "Teach with us",
+        "categories": "Categories",
+        "about-us": "About Us",
+        "faq": "FAQ",
+        "information": "Information",
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "contact": "Contact",
+        "subscribe": "Subscribe",
+         "subscribe-text": "Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi."
+    },
     "form-errors": {
         "required": "required",
         "invalid-email": "Invalid email address"

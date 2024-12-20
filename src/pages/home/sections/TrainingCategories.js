@@ -9,7 +9,7 @@ function TrainingCategories() {
 
   const limit = isMobile ? 4 : 7;
 
-  const renderCategorieCard = (item) => {
+  const [categories, loading, error] = useFetchData(`/categorie?_limit=${limit}`, (item) => {
     return (
       <CategorieCard 
         key={item.id} 
@@ -19,9 +19,7 @@ function TrainingCategories() {
         className="w-full" 
       />
     );
-  }
-
-  const [categories, loading, error] = useFetchData(`categorie?_limit=${limit}`, renderCategorieCard);
+  });
 
   if (loading) {
     return <p className="text-center text-primary">Loading training categories...</p>;

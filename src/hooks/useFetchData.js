@@ -1,56 +1,36 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from "react";
+import api from "../services/api";
 
-const useFetchData = (path, mapFn = undefined) => {
+export default function useFetchData(path, mapFn = undefined) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const mapFnRef = useRef(mapFn);
   useEffect(() => {
-    let isMounted = true;  // Track if the component is still mounted
+    mapFnRef.current = mapFn;
+  }, [mapFn]);
 
+  useEffect(() => {
     const fetchData = async () => {
-      const baseUrl = process.env.REACT_APP_API_URL;
-      if (!baseUrl) {
-        setError('API URL is not set');
-        setLoading(false);
-        return;
-      }
-
       try {
-        const response = await fetch(`${baseUrl}/${path}`);
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status} - ${response.statusText}`);
-        }
+        const result = await api.get(path);
 
-        const contentType = response.headers.get('content-type');
-        if (!contentType || !contentType.includes('application/json')) {
-          throw new Error('Received non-JSON response');
-        }
-
-        const result = await response.json();
-
-        if (mapFn && typeof mapFn === 'function') {
-          const parsedData = result.map(mapFn);
-          if (isMounted) setData(parsedData);
+        if (mapFnRef.current && typeof mapFnRef.current === "function") {
+          const parsedData = result.map(mapFnRef.current);
+          setData(parsedData);
         } else {
-          if (isMounted) setData(result);
+          setData(result);
         }
       } catch (error) {
-        if (isMounted) setError(error.message);
+        setError(error.message);
       } finally {
-        if (isMounted) setLoading(false);
+        setLoading(false);
       }
     };
 
     fetchData();
-
-    // Cleanup function to prevent setting state after unmount
-    return () => {
-      isMounted = false;
-    };
-  }, [path]);  // Re-fetch when path changes
+  }, [path]);
 
   return [data, loading, error];
-};
-
-export default useFetchData;
+}

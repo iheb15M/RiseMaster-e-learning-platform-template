@@ -12,7 +12,7 @@ function Input({ param, onValueChange, customValidation, className }) {
       let schema;
       switch (param.type) {
         case 'email':
-          schema = Yup.string().email(t('form-errors.invalid-email'));
+          schema = Yup.string().email(t('ferrors.invalid-email'));
           break;
         case 'number':
           schema = Yup.number();
@@ -21,7 +21,7 @@ function Input({ param, onValueChange, customValidation, className }) {
           schema = Yup.string();
           break;
       }
-      return param.required ? schema.required(t('form-errors.required')) : schema;
+      return param.required ? schema.required(t('errors.required')) : schema;
     }),
   });
 

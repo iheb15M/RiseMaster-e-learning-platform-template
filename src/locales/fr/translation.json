@@ -28,7 +28,24 @@
       "title": "Inscrivez-vous à notre newsletter",
       "subscribe": "S'abonner"
   },
-  "form-errors": {
+  "feedback": {
+        "title": "Ce que disent nos clients"
+    },
+  "footer": {
+    "menu": "Menu",
+    "home": "Accueil",
+    "teach-with-us": "Enseignez avec nous",
+    "categories": "Catégories",
+    "about-us": "À propos de nous",
+    "faq": "FAQ",
+    "information": "Informations",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "subscribe": "Abonnez-vous",
+    "subscribe-text": "Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi."
+},
+  "errors": {
       "required": "champ obligatoire",
       "invalid-email": "Adresse email invalide"
   }
