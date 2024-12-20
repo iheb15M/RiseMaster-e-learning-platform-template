@@ -1,13 +1,13 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 
 const useFetchData = (path, mapFn = undefined) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const stableMapFn = useCallback(mapFn, [mapFn]);
-
   useEffect(() => {
+    let isMounted = true;  // Track if the component is still mounted
+
     const fetchData = async () => {
       const baseUrl = process.env.REACT_APP_API_URL;
       if (!baseUrl) {
@@ -29,21 +29,26 @@ const useFetchData = (path, mapFn = undefined) => {
 
         const result = await response.json();
 
-        if (stableMapFn) {
-          const parsedData = result.map(stableMapFn);
-          setData(parsedData);
+        if (mapFn && typeof mapFn === 'function') {
+          const parsedData = result.map(mapFn);
+          if (isMounted) setData(parsedData);
         } else {
-          setData(result);
+          if (isMounted) setData(result);
         }
       } catch (error) {
-        setError(error.message);
+        if (isMounted) setError(error.message);
       } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
     };
 
     fetchData();
-  }, [path, stableMapFn]); 
+
+    // Cleanup function to prevent setting state after unmount
+    return () => {
+      isMounted = false;
+    };
+  }, [path]);  // Re-fetch when path changes
 
   return [data, loading, error];
 };
