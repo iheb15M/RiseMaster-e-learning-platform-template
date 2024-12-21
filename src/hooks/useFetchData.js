@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import api from "../services/api";
+import api from "../services/api.service";
 
 export default function useFetchData(path, mapFn = undefined) {
   const [data, setData] = useState(null);
