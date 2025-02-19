@@ -3,9 +3,9 @@ import PropTypes  from 'prop-types';
 import Review from "./Review";
 import Avatar from './Avatar';
 
-function FeedbackCard({key, review, feedback, profile, className}) {
+function FeedbackCard({ review, feedback, profile, className}) {
     return (
-        <div key={key} className={`bg-white flex flex-col justify-center items-center shadow-xl min-h-full rounded-3xl gap-y-7 ${className}`}>
+        <div className={`bg-white flex flex-col justify-center items-center shadow-xl min-h-full rounded-3xl gap-y-7 ${className}`}>
             <Review stars={review} />
             <q className='text-center text-xl'> {feedback} </q>
             <Avatar img={profile.img} name={profile.name} direction='horizontal' />

@@ -4,8 +4,13 @@ import Linkedin from "../../assets/img/icons/linkedin.png";
 import website from "../../assets/img/icons/link.png";
 import "./Footer.scss";
 import Input from "../../components/Input";
+import { useSelector } from "react-redux";
 
 function Footer() {
+  const showFooter = useSelector((state) => state.ui.showFooter);
+  if (!showFooter) return null;
+
+
   const inputParam = {
     type: 'email',
     name: 'email',
