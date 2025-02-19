@@ -1,31 +1,49 @@
-# RiseMaster: E-learning Platform Template
+# RiseMaster - Open Source E-Learning Platform Template
+<div align="center">
 
-## Overview
+![ShortLink Logo](./src/assets/img/logo/Logo.png)
 
-**RiseMaster** is a e-learning platform template designed to provide interactive, real-time learning experiences. This project is built using **React**, **SCSS**, and **Tailwind CSS**, and it's open-source for anyone to use or contribute to. Feel free to customize it for your own needs or enhance it by submitting a pull request.
+</div>
 
-You can preview the design on [Behance](https://www.behance.net/gallery/211014165/RiseMaster-E-learning-Platform).
+RiseMaster is an open-source, responsive, and customizable landing page template designed specifically for e-learning platforms. Built using React, this template offers modern design patterns and flexible features to help you create an attractive, user-friendly platform for your online courses and learning content. With support for multiple languages and optimized SEO settings, RiseMaster is perfect for creating e-learning experience
 
-## Features
+Demo: [https://risemaster.ihebmejri.com](https://risemaster.ihebmejri.com).
 
-- Interactive E-learning platform template
-- Fully responsive design
-- Built with **React**, **SCSS**, and **Tailwind CSS**
-- Easy to customize and extend
-- Open-source and available for contributions
+## Technology Stack
 
-## Installation
+- <img src="https://cdn.simpleicons.org/react" alt="React" width="16" height="16"> **React**
+- <img src="https://cdn.simpleicons.org/tailwindcss" alt="TailwindCSS" width="16" height="16"> **TailwindCSS**
+## Running the Project
 
-To run this project locally, follow these steps:
+To run the frontend in development mode, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/iheb15M/RiseMaster-e-learning-platform-template
-2. Install Dependecies:
-   ```bash
-   npm install
-3. Run the project:
-   ```bash
+1. Clone by running:
+```bash
+   git clone git@github.com:iheb15M/RiseMaster-e-learning-platform-template.git
+```
+
+
+2. Install the dependencies by running:
+```bash
+   npm install or npm i
+```
+
+3. Start the development server with:
+```bash
    npm run dev
+```
 
+The frontend will be available at [http://localhost:3000](http://localhost:3000).
 
+---
+
+<div align="center">
+
+### Connect with Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-iheb%20mejri-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iheb-mejri)
+[![Website](https://img.shields.io/badge/Website-ihebmejri.com-blue?logo=google-chrome&logoColor=white)](https://www.ihebmejri.com/)
+[![Behance](https://img.shields.io/badge/Behance-Mejri--iheb-blue?logo=behance&logoColor=white)](https://www.behance.net/Mejri-iheb)
+[![Medium](https://img.shields.io/badge/Medium-@iheb--mejri-black?logo=medium&logoColor=white)](https://medium.com/@iheb-mejri)
+
+</div>
