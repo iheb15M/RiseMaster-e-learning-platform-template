@@ -28,6 +28,7 @@
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.30.2",
+    "sitemap": "^8.0.0",
     "web-vitals": "^2.1.4",
     "yup": "^1.4.0"
   },
@@ -39,7 +40,8 @@
     "server": "json-server --watch mock/db.json --port 5000",
     "dev": "concurrently \"npm start\" \"npm run server\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "sitemap": "node ./sitemap-generator.js"
   },
   "eslintConfig": {
     "extends": [
