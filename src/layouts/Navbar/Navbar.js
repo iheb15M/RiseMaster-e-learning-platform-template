@@ -5,9 +5,12 @@ import MiniLogo from "../../assets/img/logo/mini-logo.png";
 import Search from "../../assets/img/icons/Search.svg";
 import Language from "../../assets/img/icons/language.svg";
 import PhoneMenu from "../../assets/img/icons/phone-menu.svg";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const showNavbar = useSelector((state) => state.ui.showNavbar);
+  if (!showNavbar) return null;
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);

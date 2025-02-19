@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { debounce } from "lodash";
 
-function Input({ param, onValueChange, customValidation, className }) {
+function Input({ param, onValueChange = () => {}, customValidation = null, className = '' }) {
   const { t } = useTranslation();
 
   const validationSchema = Yup.object({
@@ -79,12 +79,6 @@ Input.propTypes = {
   onValueChange: PropTypes.func,
   customValidation: PropTypes.object,
   className: PropTypes.string,
-};
-
-Input.defaultProps = {
-  onValueChange: () => {},
-  customValidation: null,
-  className: '',
 };
 
 export default Input;
